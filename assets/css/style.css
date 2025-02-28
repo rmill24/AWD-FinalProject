@@ -13,6 +13,9 @@
     --header-link-color: #4ECDC4;
     --container-bg: #1e1e1e;
     --logo-fill: #4ECDC4;
+    --carousel-dot-bg: #555555;
+    --carousel-dot-active: #4ECDC4;
+    --carousel-nav-bg: rgba(0, 0, 0, 0.5);
 }
 
 [data-theme="light"] {
@@ -22,6 +25,9 @@
     --header-link-color: #38A9A0;
     --container-bg: #f7f7f7;
     --logo-fill: #38A9A0;
+    --carousel-dot-bg: #cccccc;
+    --carousel-dot-active: #38A9A0;
+    --carousel-nav-bg: rgba(0, 0, 0, 0.3);
 }
 
 body {
