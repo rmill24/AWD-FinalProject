@@ -9,12 +9,12 @@
 :root {
     --bg-color: #121212;
     --text-color: #fff;
-    --accent-color: #4ECDC4;
-    --header-link-color: #4ECDC4;
+    --accent-color: #2daa9e;
+    --header-link-color: #2daa9e
     --container-bg: #1e1e1e;
-    --logo-fill: #4ECDC4;
+    --logo-fill: #2daa9e;
     --carousel-dot-bg: #555555;
-    --carousel-dot-active: #4ECDC4;
+    --carousel-dot-active: #2daa9e;
     --carousel-nav-bg: rgba(0, 0, 0, 0.5);
 }
 
