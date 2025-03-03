@@ -160,8 +160,8 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
     padding-bottom: 50px;
+    height: 100vh;
 }
 
 .content {
