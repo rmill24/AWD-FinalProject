@@ -1,3 +1,6 @@
+/* ============================================
+   GLOBAL STYLES & VARIABLES
+============================================ */
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +9,12 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Theme Variables - Dark Mode (Default) */
 :root {
     --bg-color: #121212;
     --text-color: #fff;
     --accent-color: #2daa9e;
-    --header-link-color: #2daa9e
+    --header-link-color: #2daa9e;  
     --container-bg: #1e1e1e;
     --logo-fill: #2daa9e;
     --carousel-dot-bg: #555555;
@@ -18,6 +22,7 @@
     --carousel-nav-bg: rgba(0, 0, 0, 0.5);
 }
 
+/* Theme Variables - Light Mode */
 [data-theme="light"] {
     --bg-color: #fff;
     --text-color: #333;
@@ -30,6 +35,7 @@
     --carousel-nav-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* Base Styles */
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -42,6 +48,9 @@ body {
     padding: 0 20px;
 }
 
+/* ============================================
+   HEADER & NAVIGATION
+============================================ */
 header {
     display: flex;
     justify-content: space-between;
@@ -70,6 +79,7 @@ header {
     height: auto;
 }
 
+/* Main Navigation */
 nav {
     display: flex;
     gap: 40px;
@@ -99,6 +109,7 @@ nav a:hover::after {
     width: 100%;
 }
 
+/* Theme Switch Styles */
 .theme-switch {
     display: flex;
     align-items: center;
@@ -135,6 +146,9 @@ nav a:hover::after {
     transform: translateX(30px);
 }
 
+/* ============================================
+   MAIN HERO SECTION
+============================================ */
 main {
     display: flex;
     justify-content: space-between;
@@ -162,6 +176,7 @@ p {
     opacity: 0.9;
 }
 
+/* CTA Button Styles */
 .cta-button {
     display: inline-block;
     background-color: var(--accent-color);
@@ -182,6 +197,7 @@ p {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+/* Device Mockup Styles */
 .device-mockup {
     max-width: 65%;
 }
@@ -191,7 +207,7 @@ p {
     height: auto;
 }
 
-
+/* Logo SVG Styles */
 .diamond-logo {
     width: 100px;
     height: auto;
@@ -205,6 +221,9 @@ p {
     fill: white;
 }
 
+/* ============================================
+   RESPONSIVE DESIGN - MOBILE
+============================================ */
 @media (max-width: 768px) {
     main {
         flex-direction: column;
@@ -228,11 +247,15 @@ p {
         gap: 40px;
     }
 }
+
+/* ============================================
+   CAROUSEL CONTAINER & NAVIGATION
+============================================ */
 .carousel-container {
     position: relative;
     max-width: 800px;
     margin: 40px auto;
-    overflow: visible; /* Changed from hidden to allow buttons outside */
+    overflow: visible; /* Allows buttons to appear outside */
 }
 
 .carousel {
@@ -248,7 +271,7 @@ p {
     padding: 20px;
 }
 
-/* Feature card design */
+/* Feature Card Design */
 .feature-card {
     display: flex;
     border-radius: 20px;
@@ -266,7 +289,6 @@ p {
     justify-content: center;
     height: 80vh;
     width: 500px;
-    
 }
 
 .feature-visual {
@@ -291,7 +313,9 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Calendar styling */
+/* ============================================
+   CALENDAR WIDGET STYLES
+============================================ */
 .calendar-widget {
     width: 250px;
     border-radius: 10px;
@@ -376,7 +400,9 @@ h2 {
     height: 30px;
 }
 
-/* Side decorative elements */
+/* ============================================
+   DECORATIVE ELEMENTS
+============================================ */
 .side-element {
     position: absolute;
     background-color: var(--side-element-bg);
@@ -398,7 +424,9 @@ h2 {
     top: 30%;
 }
 
-/* Carousel navigation */
+/* ============================================
+   CAROUSEL NAVIGATION
+============================================ */
 .carousel-dots {
     display: flex;
     justify-content: center;
@@ -450,6 +478,9 @@ h2 {
     right: -20px; /* Position outside the carousel */
 }
 
+/* ============================================
+   LOGO STYLES
+============================================ */
 .diamond-logo {
     width: 100px;
     height: auto;
@@ -460,6 +491,9 @@ h2 {
     fill: #382806;
 }
 
+/* ============================================
+   RESPONSIVE DESIGN - CAROUSEL
+============================================ */
 @media (max-width: 768px) {
     .feature-card {
         flex-direction: column;
@@ -474,6 +508,10 @@ h2 {
         font-size: 2rem;
     }
 }
+
+/* ============================================
+   FOOTER STYLES
+============================================ */
 .footer {
     background-color: #4ECDC4;
     color: white;
@@ -527,6 +565,7 @@ h2 {
     text-decoration: underline;
 }
 
+/* Social Media Icons */
 .social-icons {
     display: flex;
     gap: 15px;
@@ -542,6 +581,7 @@ h2 {
     justify-content: center;
 }
 
+/* Footer Bottom Bar */
 .bottom-bar {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     padding: 15px 20px;
@@ -560,6 +600,7 @@ h2 {
     text-decoration: none;
 }
 
+/* Back to Top Button */
 .back-to-top {
     display: flex;
     align-items: center;
@@ -582,6 +623,9 @@ h2 {
     fill: #4ECDC4;
 }
 
+/* ============================================
+   RESPONSIVE DESIGN - FOOTER
+============================================ */
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
