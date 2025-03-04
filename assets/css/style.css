@@ -18,7 +18,7 @@
     --text-color: #fff;
     --accent-color: #2daa9e;
     --header-link-color: #2daa9e;  
-    --container-bg: #1e1e1e;
+    --container-bg: #f7f7f7;
     --logo-fill: #2daa9e;
     --carousel-dot-bg: #555555;
     --carousel-dot-active: #2daa9e;
@@ -35,7 +35,7 @@
     --text-color: #333;
     --accent-color: #38A9A0;
     --header-link-color: #38A9A0;
-    --container-bg: #f7f7f7;
+    --container-bg: #1e1e1e;
     --logo-fill: #38A9A0;
     --carousel-dot-bg: #cccccc;
     --carousel-dot-active: #38A9A0;
@@ -281,11 +281,11 @@ p {
 /* Feature Card Design */
 .feature-card {
     display: flex;
+    flex-direction: row; /* Ensure horizontal layout */
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     background: var(--container-bg);
-    width: 80vw;
 }
 
 .feature-info {
@@ -305,7 +305,7 @@ p {
     justify-content: center;
     align-items: center;
     background-color: var(--accent-color);
-    border-radius: 0 20px 20px 0;
+    border-radius: 20px 0 0 20px; /* Rounded left corners */
 }
 
 h2 {
@@ -503,16 +503,11 @@ h2 {
 ============================================ */
 @media (max-width: 768px) {
     .feature-card {
-        flex-direction: column;
+        flex-direction: column; /* Stack on mobile */
     }
     
     .feature-visual {
-        border-radius: 0 0 20px 20px;
-        min-height: 200px;
-    }
-    
-    h2 {
-        font-size: 2rem;
+        border-radius: 20px 20px 0 0; /* Rounded top corners on mobile */
     }
 }
 
